@@ -344,17 +344,20 @@ Alias, já abriu um chamado hoje?
                             </div>
                         </div>
                     </div>
+
                     <div class="right-contact">
-                        <form action="" class="contact-form">
+                        <form method="POST" class="contact-form">
                             <div class="input-control i-c-2">
-                                <input type="text" required placeholder="SEU NOME">
-                                <input type="email" required placeholder="SEU E-MAIL">
+                                <input type="text" required placeholder="SEU NOME" id="name">
+                                <input type="email" required placeholder="SEU E-MAIL" id="email">
                             </div>
                             <div class="input-control">
-                                <input type="text" required placeholder="TÍTULO">
+                                <input type="text" required placeholder="TÍTULO" id="subject">
                             </div>
                             <div class="input-control">
-                                <textarea name="" id="" cols="15" rows="8" placeholder="DESCREVA AQUI..."></textarea>
+                                <textarea name="" id="" cols="15" rows="8" placeholder="DESCREVA AQUI..." id="massage"></textarea>
+
+                                <button type="submit" onclick="sendEmail()">Enviar</button>
                             </div>
                             <div class="submit-btn">
                                 <a href="https://drive.google.com/uc?export=download&id=1-66-Ev6o1jC0_Q02nKoNXYpYx2crNfnd" class="main-btn">
@@ -387,5 +390,6 @@ Alias, já abriu um chamado hoje?
         <i class="fas fa-adjust"></i>
     </div>
     <script src="app.js"></script>
+    <script src="emailJS"></script>
 </body>
 </html>
