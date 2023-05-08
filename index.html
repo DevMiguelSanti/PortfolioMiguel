@@ -282,7 +282,7 @@ Alias, já abriu um chamado hoje?
                     </div>
                 </div>
             </div>
-        </section>
+        </section> 
         <section class="container contact" id="contact">
             <div class="contact-container">
                 <div class="main-title">
@@ -346,18 +346,20 @@ Alias, já abriu um chamado hoje?
                     </div>
 
                     <div class="right-contact">
-                        <form method="POST" class="contact-form">
+                        <form id="contact-form" action="https://getform.io/f/fb7e720f-4955-4342-a0f6-e6629a1fc7be" method="post"onsubmit="return submitForm();">
                             <div class="input-control i-c-2">
-                                <input type="text" required placeholder="SEU NOME" id="name">
-                                <input type="email" required placeholder="SEU E-MAIL" id="email">
+                                <input type="hidden" name="redirectTo" value="">
+                                <input type="text" name="name" required placeholder="NOME">
+                                <input type="email" name="email" required placeholder="E-MAIL">
                             </div>
                             <div class="input-control">
-                                <input type="text" required placeholder="TÍTULO" id="subject">
+                                <input type="text" name="subject" required placeholder="TÍTULO">
                             </div>
                             <div class="input-control">
-                                <textarea name="" id="" cols="15" rows="8" placeholder="DESCREVA AQUI..." id="message"></textarea>
-
-                                <button type="submit" onclick="sendEmail()">Enviar</button>
+                                <textarea name="message" cols="15" rows="8" placeholder="DESCREVA AQUI..."></textarea>
+                                <div>
+                                <button class="send-btn" type="submit">Enviar</button>
+                                </div>
                             </div>
                             <div class="submit-btn">
                                 <a href="https://drive.google.com/uc?export=download&id=1-66-Ev6o1jC0_Q02nKoNXYpYx2crNfnd" class="main-btn">
@@ -390,6 +392,5 @@ Alias, já abriu um chamado hoje?
         <i class="fas fa-adjust"></i>
     </div>
     <script src="app.js"></script>
-    <script src="emailJS"></script>
 </body>
 </html>
