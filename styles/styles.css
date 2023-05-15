@@ -644,11 +644,12 @@ section {
   padding: 0.5rem 1rem;
   outline: none;
   border: none;
-  background-color: var(--color-grey-5);
+  background-color: var(#b2becd9d);
   width: 20%;
-  color: var(--color-white);
+  color: var(#);
   resize: none;
   position: center;
+  cursor: pointer;
 }
 
 
